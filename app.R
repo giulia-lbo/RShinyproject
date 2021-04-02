@@ -49,7 +49,7 @@ ui<-fluidPage(
                 label = "Select",
                 min = 2010,
                 max = 2019,
-                value = c(2010, 2011),
+                value = c(2010, 2019),
                 step=1,
                 sep=''),
     ),# END sideBarPanel
