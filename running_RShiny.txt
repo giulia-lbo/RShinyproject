@@ -1,0 +1,13 @@
+Either 
+(test-nodownloadreq)
+library(shiny)
+shiny::runGitHub("RShinyproject","zulai98")
+
+or
+(test-downloadreq)
+download the project/unzip it and move it to the Downloads folders
+library(shiny)
+print('Please save the de-compressed project in the Downloads folders')
+setwd("C:/Users/Admin/Downloads")
+runApp("RShinyproject")
+--
