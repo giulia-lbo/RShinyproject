@@ -6,4 +6,13 @@ An interactive plot depicts the Healthy Life Years (along the years) for the use
 
 NOTE:  default options are none for country and 2010-2019 for time-range.
 
-NOTE: To run the app please see the testing directory. The tester could either run the test-nodownloadreq app (calls runGitHub) or download the project, unzip it, move it to Downloads and run the test-downloadreq app (calls runApp).
+NOTE: To run the app please see the testing directory. The tester could either:
+OPTION 1 - run the following commands:
+library(shiny)
+shiny::runGitHub("RShinyproject","zulai98")
+
+or
+OPTION 2 -download the project, unzip it, move it to the Downloads directory and run the following commands: 
+library(shiny)
+setwd("C:/Users/Admin/Downloads")
+runApp("RShinyproject")
