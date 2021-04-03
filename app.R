@@ -92,22 +92,24 @@ server <- (function(input, output) {
                 size= 0.75)+
       geom_text(data = data1() %>% filter(year == last(year)),
                 aes(label = country, 
-                    x = year + 0.5, 
+                    x = year + 0.3, 
                     y = healthy_years, 
                     color = country),
-                size=3,
+                size=2,
                 fontface = "bold") +
       scale_x_continuous(breaks = seq(2010, 2019, by = 1))+
       labs(title = "Average Healthy Life Years across Europe",
            x= "Year",
            y= "Healthy Life Years (HLY)")+
-      theme(plot.title = element_text(face="bold"),
-            axis.text.x = element_text(size=10.5, angle=45,  hjust = 1),
+      theme(
+            plot.title = element_text(face="bold"),
+            axis.text.x = element_text(size=10, angle=45,  hjust = 1),
             axis.title.x = element_text(face="bold"),
             axis.title.y = element_text(face="bold"),
-            axis.text.y = element_text(size=10.5),
-            legend.position = "none")+
-      scale_color_manual(values=safe_pal)
+            axis.text.y = element_text(size=10),
+            legend.direction = "vertical",
+            legend.title=element_blank())+
+    scale_color_manual(values=safe_pal)
     liv_healthy_years <- ggplotly(liv_healthy_years)%>% 
       animation_opts(
         frame = 150, 

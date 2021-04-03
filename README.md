@@ -6,6 +6,8 @@ An interactive plot depicts the Healthy Life Years (along the years) for the use
 
 NOTE:  default options are none for country and 2010-2019 for time-range.
 
+NOTE: Some data (e.g. Finland in 2013) is missing from the database.
+
 NOTE: To run the app please see the testing directory. The tester could either:
 OPTION 1 - run the following commands:
 library(shiny)
