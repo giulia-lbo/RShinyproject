@@ -6,8 +6,6 @@ library(rcartocolor)
 library(readr)
 library(plotly)
 
-setwd("~/RShinyProject")
-
 nb.cols <- 28
 safe_pal<- colorRampPalette(carto_pal(12, "Safe"))(nb.cols)
 # Dataset
